@@ -4,5 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-numpy = "0.17"
 rayon = "1.0"
+ndarray = { version = "0.15.0", features = ["blas"] }
+blas-src = { version = "0.8", features = ["openblas"] }
+openblas-src = { version = "0.10", features = ["cblas", "system"] }
